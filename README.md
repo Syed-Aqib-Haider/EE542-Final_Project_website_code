@@ -1,4 +1,5 @@
 # EE542-Final_Project_website_code
+Note: Ignore the website_code folder. The correct folder is breast_ai_project whoch has backend and frontend folder.
 Website code for the AI Breast Cancer detection -deployed on GCP VM -login: http://136.118.169.96:8080
 The zip files contains backend and frontend .
 However to execute the same on a different machine , other than our GCP, an environment variable WP must be created and pointed to the specific model weights file "best_convnext_small_sigproc_noprior.pt" 
