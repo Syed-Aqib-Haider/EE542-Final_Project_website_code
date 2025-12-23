@@ -2,6 +2,7 @@
 Website code for the AI Breast Cancer detection -deployed on GCP VM -login: http://136.118.169.96:8080
 The zip files contains backend and frontend .
 However to execute the same on a different machine , other than our GCP, an environment variable WP must be created and pointed to the specific model weights file "best_convnext_small_sigproc_noprior.pt" 
+Link here : https://drive.google.com/file/d/1ecNJeZ6E0hBhY12jx_20LUXdDSYVAz--/view?usp=drive_link
 This can be done by downlaoding the .pt file and giving the command "export WP="path/to/best_convnext_small_sigproc_noprior.pt"
 Then an environment having cuda must be inititiated for example if cuda_anv is name of the conda env - conda activate cuda_env in both backend and frontend folder 
 Then in backend the following command in cuda_env environment, "uvicorn app:app --host 0.0.0.0 --port 8005"
